@@ -114,3 +114,8 @@ origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 origin  https://github.com/OWNER/REPOSITORY.git (push)
 ```
 
+# 6. Delete all uncommitted changes
+```bash
+$ git reset --hard
+```
+This throws away all your uncommitted changes. For safety, you should always check that the output of `git status`. [Reference](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit).
