@@ -15,7 +15,7 @@ git init
 # 2. Create a new repository
 
 ## 2.1. Make a new repository in GitHub
-I made a new repository named as 'git_practice'. Then, I got the repository on 'https://github.com/sungjae-cho/git_practice'.  
+I made a new repository named as 'git_practice'. Then, I got the repository on 'https://github.com/sungjae-cho/git-practice'.  
 
 ## 2.2. Clone the repository on your local directory
 ```
