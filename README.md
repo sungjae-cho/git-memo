@@ -136,7 +136,11 @@ $ git diff --cached
 
 The following command returns the recent commits. `j` is for down scolloing and `k` for up scolling.
 ```bash
-$ git --stat
+$ git log
+```
+To see more detailed information about the commit, type the following.
+```bash
+$ git log --stat
 ```
 Search a particular commit stage where to move over the recent commits.
 
