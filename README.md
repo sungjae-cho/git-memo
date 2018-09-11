@@ -131,3 +131,16 @@ Detailed information
 ```bash
 $ git diff --cached
 ```
+
+# 8. Move to a particular commit stage
+
+The following command returns the recent commits. `j` is for down scolloing and `k` for up scolling.
+```bash
+$ git --stat
+```
+Search a particular commit stage where to move over the recent commits.
+
+Type the follwing to move on to the commit stage.
+```bash
+$ git reset <commit-id>
+```
