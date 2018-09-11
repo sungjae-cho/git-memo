@@ -122,12 +122,12 @@ This throws away all your uncommitted changes. For safety, you should always che
 
 # 7. See all the added files that have been changed 
 
-Just file names
+To get just file names, type the following.
 ```bash
 $ git diff --cached --name-only
 ```
 
-Detailed information
+To get detailed information, type the following.
 ```bash
 $ git diff --cached
 ```
