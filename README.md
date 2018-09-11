@@ -144,7 +144,7 @@ $ git log --stat
 ```
 Search a particular commit stage where to move over the recent commits.
 
-Type the follwing to move on to the commit stage.
+Type the following to move on to the commit stage. The following command **resets the commit ID as the head**, say, **the last commit ID**.
 ```bash
 $ git reset <commit-id>
 ```
