@@ -119,3 +119,15 @@ origin  https://github.com/OWNER/REPOSITORY.git (push)
 $ git reset --hard
 ```
 This throws away all your uncommitted changes. For safety, you should always check that the output of `git status`. [Reference](https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit).
+
+# 7. See all the added files that have been changed 
+
+Just file names
+```bash
+$ git diff --cached --name-only
+```
+
+Detailed information
+```bash
+$ git diff --cached
+```
