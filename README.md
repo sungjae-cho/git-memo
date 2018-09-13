@@ -63,7 +63,7 @@ Once you enter the command, you should type GitHub ID and password to push. Then
 Change the working directory to the local directory.
 ```
 cd <folder name>
-cd git_practice
+cd git-practice
 ```
 
 ## 3.2. Check the connection with the remote repository in GitHub.
