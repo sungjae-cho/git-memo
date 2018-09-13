@@ -2,7 +2,7 @@
 
 ## 1.1. Configure username and email
 ```
-$ git config --global user.name "Sungjae"
+$ git config --global user.name "Sungjae Cho"
 $ git config --global user.email "sungjae.cho.1118@gmail.com"
 ```
 These name and email are not related to the GitHub account.
@@ -15,7 +15,7 @@ git init
 # 2. Create a new repository
 
 ## 2.1. Make a new repository in GitHub
-I made a new repository named as 'git_practice'. Then, I got the repository on 'https://github.com/sungjae-cho/git-practice'.  
+I made a new repository named as 'git-practice'. Then, I got the repository on 'https://github.com/sungjae-cho/git-practice'.  
 
 ## 2.2. Clone the repository on your local directory
 ```
@@ -31,7 +31,7 @@ cd git-practice
 We should make a connection between the repositry in GitHub and the local directory.
 ```
 git remote add <connection name> <repository url in github>
-git remote add git_practice https://github.com/sungjae-cho/git-practice
+git remote add git-practice https://github.com/sungjae-cho/git-practice
 ```
 We can check what connections exist by typing as follows.
 ```
