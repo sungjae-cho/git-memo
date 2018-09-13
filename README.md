@@ -53,7 +53,7 @@ git commit -a -m "Something has been updated."
 Third, push the commit to the remote directory in GitHub.
 ```
 git push <connection name> <user name>
-git push git_practice master
+git push git-practice master
 ```
 Once you enter the command, you should type GitHub ID and password to push. Then, you can find that the new files have been added in 'https://github.com/sungjae-cho/git-practice'.
 
