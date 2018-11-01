@@ -148,3 +148,11 @@ Type the following to move on to the commit stage. The following command **reset
 ```bash
 $ git reset <commit-id>
 ```
+
+# 9. See added files 
+
+See files added by the `git ls-files` command.
+
+```bash
+git ls-files
+```
