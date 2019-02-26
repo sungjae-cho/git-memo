@@ -156,3 +156,9 @@ See files added by the `git ls-files` command.
 ```bash
 git ls-files
 ```
+
+# 10. See untracked files
+
+```bash
+git status -u
+```
