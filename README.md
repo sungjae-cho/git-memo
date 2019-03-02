@@ -176,3 +176,9 @@ The second way
 ```bash
 git commit
 ```
+
+# 12. Restore a file of a particular commit version
+
+```bash
+git checkout <commit_id> <file_path_to_restore>
+```
