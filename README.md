@@ -162,3 +162,17 @@ git ls-files
 ```bash
 git status -u
 ```
+
+# 11. Add a commit description to a commit.
+
+[How to commit a change with both “message” and “description” from the command line? [duplicate]](https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li)
+
+The first way
+```bash
+git commit -m "Title" -m "Description ..........";
+```
+
+The second way
+```bash
+git commit
+```
