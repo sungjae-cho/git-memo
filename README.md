@@ -182,3 +182,12 @@ git commit
 ```bash
 git checkout <commit_id> <file_path_to_restore>
 ```
+
+# 13. Put away local changes and overwrite the local files with the most recent origin/master branch.
+
+```bash
+git fetch --all
+git reset --hard origin/master
+```
+* Reference: [How do I force “git pull” to overwrite local files?](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
+* Explanation: `git fetch` downloads the latest from remote without trying to merge or rebase anything. Then the `git reset` resets the master branch to what you just fetched. The `--hard` option changes all the files in your working tree to match the files in `origin/master`.
