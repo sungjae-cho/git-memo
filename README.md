@@ -157,10 +157,16 @@ See files added by the `git ls-files` command.
 git ls-files
 ```
 
-# 10. See untracked files
+# 10. See modified/untracked files
 
 ```bash
 git status -u
+```
+
+## 10.1. See only modiefed files
+
+```bash
+git ls-files -m
 ```
 
 # 11. Add a commit description to a commit.
