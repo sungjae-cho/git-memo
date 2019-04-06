@@ -163,7 +163,7 @@ git ls-files
 git status -u
 ```
 
-## 10.1. See only modiefed files
+## 10.1. See only modified files
 
 ```bash
 git ls-files -m
