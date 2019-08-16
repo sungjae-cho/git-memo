@@ -197,3 +197,40 @@ git reset --hard origin/master
 ```
 * Reference: [How do I force “git pull” to overwrite local files?](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
 * Explanation: `git fetch` downloads the latest from remote without trying to merge or rebase anything. Then the `git reset` resets the master branch to what you just fetched. The `--hard` option changes all the files in your working tree to match the files in `origin/master`.
+
+# 14. Duplicating a master repository
+
+[Reference](https://help.github.com/en/articles/duplicating-a-repository)
+
+Open Terminal.
+
+Create a bare clone of the repository.
+
+```bash
+git clone --bare https://github.com/exampleuser/old-repository.git
+```
+
+Mirror-push to the new repository.
+
+```bash
+cd old-repository.git
+git push --mirror https://github.com/exampleuser/new-repository.git
+```
+
+Remove the temporary local repository you created in step 1.
+
+```bash
+cd ..
+rm -rf old-repository.git
+```
+# 15. Duplicating a branch repository
+
+[Reference](https://stackoverflow.com/questions/38027834/git-mirror-a-repo-to-specific-branch)
+
+```bash
+git clone --single-branch --branch <branch_name> <github_repo_url>
+cd <repo_dir>
+git remote add <new_remote> <your_repo_url>
+git push -u <new_remote>; git push --tags -u <new_remote>
+```
+"This will gather the entire history leading up to branch_name, but no commits that are not ancestral to it."
