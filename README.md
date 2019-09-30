@@ -234,3 +234,10 @@ git remote add <new_remote> <your_repo_url>
 git push -u <new_remote>; git push --tags -u <new_remote>
 ```
 "This will gather the entire history leading up to branch_name, but no commits that are not ancestral to it."
+
+# 16. Resetting remote to a certain commit
+```bash
+git reset --hard <commit-hash>
+git push -f origin master
+```
+[Reference](https://stackoverflow.com/questions/5816688/resetting-remote-to-a-certain-commit)
