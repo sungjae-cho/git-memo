@@ -241,3 +241,30 @@ git reset --hard <commit-hash>
 git push -f origin master
 ```
 [Reference](https://stackoverflow.com/questions/5816688/resetting-remote-to-a-certain-commit)
+
+# 17. How to update a forked repo as its original repo
+
+Add the forked original repo to the remote and call it `upstream`.
+
+```bash
+git remote add upstream https://github.com/<original-repo>.git
+```
+
+Fetch all branches of remote `upstream`.
+
+```bash
+git fetch upstream
+```
+
+Rewrite your `master` with upstream’s `master` using `git rebase`.
+
+```bash
+git rebase upstream/master
+```
+
+Push your updates to your `master`. You may need to force the push with `--force`.
+```bash
+git push origin master --force
+```
+
+[Reference](https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a)
