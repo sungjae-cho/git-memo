@@ -268,3 +268,9 @@ git push origin master --force
 ```
 
 [Reference](https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a)
+
+# 18. `git diff`
+See what is added and deleted for <new-commit-id> compared with `<old-commit-id>`.
+```
+git diff <new-commit-id> <old-commit-id>
+```
