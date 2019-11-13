@@ -275,7 +275,7 @@ See what is added and deleted for <new-commit-id> compared with `<old-commit-id>
 git diff <new-commit-id> <old-commit-id>
 ```
   
-See what is added and deleted for the current `HEAD` compared with `<old-commit-id>`.
+See what is added and deleted for the current state compared with `<old-commit-id>`.
 ```
 git diff <old-commit-id>
 ```
