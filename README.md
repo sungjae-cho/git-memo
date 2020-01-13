@@ -279,3 +279,13 @@ See what is added and deleted for the current state compared with `<old-commit-i
 ```
 git diff <old-commit-id>
 ```
+
+# 19. Hard reset of a single file
+
+```
+git checkout HEAD -- my-file.txt
+```
+
+`--` basically means: treat every argument after this point as a file name.
+
+[Reference](https://stackoverflow.com/questions/7147270/hard-reset-of-a-single-file)
