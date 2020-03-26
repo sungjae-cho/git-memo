@@ -289,3 +289,29 @@ git checkout HEAD -- my-file.txt
 `--` basically means: treat every argument after this point as a file name.
 
 [Reference](https://stackoverflow.com/questions/7147270/hard-reset-of-a-single-file)
+
+# 20. `git add` parts of modified lines
+
+```
+git add -p # If you do not need to specify some files to commit
+git add -p <file_name> # If you want to commit some lines with a particular file
+git add -p <file_name> ... <file_name> # If you want to commit some lines with particular files
+```
+
+```
+           y - stage this hunk
+           n - do not stage this hunk
+           q - quit; do not stage this hunk nor any of the remaining ones
+           a - stage this hunk and all later hunks in the file
+           d - do not stage this hunk nor any of the later hunks in the file
+           g - select a hunk to go to
+           / - search for a hunk matching the given regex
+           j - leave this hunk undecided, see next undecided hunk
+           J - leave this hunk undecided, see next hunk
+           k - leave this hunk undecided, see previous undecided hunk
+           K - leave this hunk undecided, see previous hunk
+           s - split the current hunk into smaller hunks
+           e - manually edit the current hunk
+           ? - print help
+```
+Key controllers: y, n, q, s, and ?.
