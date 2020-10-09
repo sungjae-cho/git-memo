@@ -342,6 +342,7 @@ Reference [link](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch
 See [this official document](https://git-scm.com/docs/git-checkout) of `git checkout` to understand this command.
 According to the document, `git checkout` "updates files in the working tree to match the version in the index or the specified tree".
 The "working tree" means the current branch, and the "files in the working tree" means the files tracked by the current branch.
+Thus, untracking files is not changed after `git checkout`.
 
 ```bash
 git checkout <dest_branch>
