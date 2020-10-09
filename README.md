@@ -315,3 +315,32 @@ git add -p <file_name> ... <file_name> # If you want to commit some lines with p
            ? - print help
 ```
 Key controllers: y, n, q, s, and ?.
+
+# 21. Create a new branch and push it to the GitHub remote repository
+
+Create a new branch in the local machine.
+
+```bash
+git checkout -b <new_branch>
+```
+
+Now, a new brach named `<new_branch>` has been created.
+
+Push the new branch, `<new_branch>` to the GitHub remote repository, `origin`.
+
+```bash
+git push origin <new_branch>
+```
+
+Now, you can find the new branch in your GitHub remote repository.
+
+# 22. Switch a branch and update tracking files in the local machine
+
+`git checkout` is the Git command to switch a branch and update tracking files in the local machine.
+See this official document of `git checkout` to understand this command.
+According to the document, `git checkout` "updates files in the working tree to match the version in the index or the specified tree".
+The "working tree" means the current branch, and the "files in the working tree" means the files tracked by the current branch.
+
+```bash
+git checkout <dest_branch>
+```
