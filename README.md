@@ -334,10 +334,12 @@ git push origin <new_branch>
 
 Now, you can find the new branch in your GitHub remote repository.
 
+Reference [link](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+
 # 22. Switch a branch and update tracking files in the local machine
 
 `git checkout` is the Git command to switch a branch and update tracking files in the local machine.
-See this official document of `git checkout` to understand this command.
+See [this official document](https://git-scm.com/docs/git-checkout) of `git checkout` to understand this command.
 According to the document, `git checkout` "updates files in the working tree to match the version in the index or the specified tree".
 The "working tree" means the current branch, and the "files in the working tree" means the files tracked by the current branch.
 
