@@ -347,3 +347,19 @@ Thus, untracking files is not changed after `git checkout`.
 ```bash
 git checkout <dest_branch>
 ```
+
+# 23. Re-write commit history of the downstream branch: Rebase `git rebase`
+
+[Reference: git rebase | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+- Merging results in an extraneous merge commit every time you need to incorporate upstream changes.
+- The major benefit of rebasing is that you get a much cleaner project history.
+- Rebasing eliminates the unnecessary merge commits required by git merge.
+- Rebasing also results in a perfectly linear project history.
+- There are two trade-offs for rebasing pristine commit history: safety and traceability.
+- Never use rebasing on public branches. Is anyone else looking at this branch?” If the answer is yes, take your hands off the keyboard and start thinking about a non-destructive way to make your changes (e.g., the git revert command)
+- Otherwise, you’re safe to re-write history as much as you like.
+
+You can rebase the `feature` branch onto `master` branch using the following commands:
+```bash
+git checkout feature git rebase master
+```
