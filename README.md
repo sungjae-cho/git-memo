@@ -363,3 +363,9 @@ You can rebase the `feature` branch onto `master` branch using the following com
 ```bash
 git checkout feature git rebase master
 ```
+
+# 24. `git clone` only branch
+
+```bash
+git clone -b <branch_name> --single-branch <repo_url>
+```
