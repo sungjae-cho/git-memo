@@ -369,3 +369,22 @@ git checkout feature git rebase master
 ```bash
 git clone -b <branch_name> --single-branch <repo_url>
 ```
+
+# 25. `git submodule`
+
+Clone a root repository.
+
+```bash
+git clone https://github.com/<GITHUB_ID>/<project_name>.git
+```
+
+Add a submodule.
+
+```bash
+cd <project_name>
+git submodule add -b <branch> https://github.com/<GITHUB_ID>/<project_name>.git <submodule_directory_name>
+```
+
+You can check the `<submodule_directory_name>` folder and `.gitmodules` file have been created.
+
+Then, commit and push the submodule file that you can check with `git status -u`.
