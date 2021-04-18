@@ -336,6 +336,16 @@ Now, you can find the new branch in your GitHub remote repository.
 
 Reference [link](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
 
+## 21.2. Remove a new branch and push it to the GitHub remote repository
+
+```bash
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+```
+
 # 22. Switch a branch and update tracking files in the local machine
 
 `git checkout` is the Git command to switch a branch and update tracking files in the local machine.
