@@ -413,3 +413,13 @@ git rm -f path/to/submodule
 ```
 
 [Reference](https://medium.com/day34/git-submodule-9f0ab0b79826)
+  
+# 27. What happens to my forked repo if the original public repo is removed?
+
+A. My repo is preserved, and a new parent repo appears.
+  - Deleting a private repository will delete all of its forks.
+  - Deleting a public repository will not delete its forks.
+  - If public repo is converted to private, and deleted the original: Forked repo will not be deleted. a public repository's forks will remain public in their own separate repository network even after the parent repository is made private.
+  [Reference](https://stackoverflow.com/questions/53052745/what-happens-to-the-forks-when-deleting-the-original-repository)
+
+  
