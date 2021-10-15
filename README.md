@@ -422,4 +422,17 @@ A. My repo is preserved, and a new parent repo appears.
   - If public repo is converted to private, and deleted the original: Forked repo will not be deleted. a public repository's forks will remain public in their own separate repository network even after the parent repository is made private.
   [Reference](https://stackoverflow.com/questions/53052745/what-happens-to-the-forks-when-deleting-the-original-repository)
 
+# 28. Fix an old commit message.
   
+  [Reference](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
+
+## 28.1. Fix the message of the most recent old commit.
+  Type `git commit --amend`. Then, a text editor is open and you just edit the old commit message.
+  
+## 28.2. Fix the message of old commits.
+  1. On the command line, navigate (with `git log`) to the repository that contains the commit you want to amend.
+  1. Use the `git rebase -i HEAD~n` command to display a list of the last `n` commits in your default text editor.
+  1. Replace `pick` with `reword` before each commit message you want to change.
+  1. Save and close the commit list file.
+  1. In each resulting commit file, type the new commit message, save the file, and close it.
+  1. When you're ready to push your changes to GitHub, use the push --force command to force push over the old commit.
