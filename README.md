@@ -436,3 +436,23 @@ A. My repo is preserved, and a new parent repo appears.
   1. Save and close the commit list file.
   1. In each resulting commit file, type the new commit message, save the file, and close it.
   1. When you're ready to push your changes to GitHub, use the push --force command to force push over the old commit.
+  
+  
+# 29. Remove files saying "old mode 100755 new mode 100644" from unstaged changes in Git?
+  
+  When you add changes in your files, you may obstruct the following change.
+  
+  ```bash
+  old mode 100755  
+  new mode 100644  
+  ```
+
+  These different modes are changed depending on the system you use.
+  It is not crucial to commit this change to your commit history.
+  Then, use the folloing command not to see the message above.
+  
+  ```bash
+  git config core.filemode false
+  ```
+  
+  [Reference](https://stackoverflow.com/questions/1257592/how-do-i-remove-files-saying-old-mode-100755-new-mode-100644-from-unstaged-cha)
