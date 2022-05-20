@@ -456,3 +456,44 @@ A. My repo is preserved, and a new parent repo appears.
   ```
   
   [Reference](https://stackoverflow.com/questions/1257592/how-do-i-remove-files-saying-old-mode-100755-new-mode-100644-from-unstaged-cha)
+
+# 30. Git LFS (Large File Storage)
+  
+  [The wiki document of Git LFS](https://github.com/git-lfs/git-lfs/wiki) properly illustrates how to install Git LFS, and [this documents](https://newsight.tistory.com/330) expalin how to use Git LFS.
+  I proceeded the following procedure on Ubuntu 20.x.
+  
+  ```bash
+  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+  sudo apt-get install git-lfs
+  ```
+  
+  Then, move to the repository where Git LFS will be used. Then, type the following.
+  
+  ```bash
+  git lfs install
+  ```
+  
+  Then, designate the file to be tracked by Git LFS using the following.
+  
+  ```bash
+  git lfs track <file-path-to-track>
+  ```
+  
+  Then, `.gitattributes` has been created in the current location.
+  Commit and push the file.
+  
+  ```bash
+  git add .gitattributes
+  git commit -m "Create gitattributes for LFS."
+  git push <remote> <branch>
+  ```
+  
+  Then, commit the file to be tracked by Git LFS.
+  
+  ```bash
+  git add <file-path-to-track>
+  git commit -m <message-string>
+  git push <remote> <branch>
+  ```
+  
+  
