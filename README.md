@@ -316,6 +316,8 @@ git add -p <file_name> ... <file_name> # If you want to commit some lines with p
 ```
 Key controllers: y, n, q, s, and ?.
 
+To remove part of added or staged lines, use `git reset -p`, which can be used as `git add -p`.
+
 # 21. Create a new branch and push it to the GitHub remote repository
 
 Create a new branch in the local machine.
