@@ -280,6 +280,11 @@ See what is added and deleted for the current state compared with `<old-commit-i
 git diff <old-commit-id>
 ```
 
+If you want to see the difference of a new file to an old file in the `git diff` format, then use the following.
+```
+git diff --no-index <old-file-name> <new-file-name>
+```
+
 # 19. Hard reset of a single file
 
 ```
